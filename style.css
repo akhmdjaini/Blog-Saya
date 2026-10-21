@@ -1,0 +1,138 @@
+/* === 1. RESET & SKEMA WARNA DASAR (SELECTOR ELEMEN) === */
+/* Palet Warna Hex Pilihan:
+   1. #1E3A8A (Biru Navy Tua - Warna Utama)
+   2. #D97706 (Oranye Amber - Warna Aksen)
+   3. #F8FAFC (Abu-abu Sangat Muda - Warna Latar Halaman)
+   4. #1E293B (Abu-abu Gelap / Slate - Warna Teks Utama)
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Google Fonts + Fallback */
+    font-size: 16px;
+    line-height: 1.75; /* Jarak antar baris yang nyaman dibaca */
+    color: #1E293B;
+    background-color: #F8FAFC;
+    margin: 0;
+    padding: 0;
+}
+
+/* === 2. LAYOUT UTAMA & PEMBATAS LEBAR KONTEN === */
+main {
+    max-width: 720px; 
+    margin: 0 auto;   
+    background-color: #FFFFFF;
+    padding: 32px 40px;
+    border-top: 4px solid #D97706;
+}
+
+/* === 3. HEADER & NAVIGASI (SELECTOR ID & DESCENDANT) === */
+#header-utama {
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 36px 20px;
+}
+
+nav a {
+    color: #F8FAFC;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+}
+
+/* === 4. TIPOGRAFI & HIERARKI HEADING === */
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 8px 0 16px 0;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #1E3A8A;
+    border-bottom: 2px solid #D97706;
+    padding-bottom: 6px;
+    margin-top: 28px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #1E3A8A;
+    margin-top: 0;
+}
+
+.kategori-blog {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #FCD34D;
+    margin: 0;
+}
+
+.info-penulis {
+    font-size: 14px;
+    color: #64748B;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+/* === 5. STYLING ARTIKEL (SELECTOR CHILD > & CLASS) === */
+article > p {
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+.lead-paragraf {
+    background-color: #FEF3C7;
+    padding: 16px;
+    border-left: 4px solid #D97706;
+    font-weight: 600;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #F1F5F9;
+    border-left: 4px solid #1E3A8A;
+    margin: 24px 0;
+    padding: 16px 20px;
+    color: #0F172A;
+}
+
+.kartu-referensi {
+    background-color: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* === 6. PSEUDO-CLASS (:hover, :first-child, :nth-child) === */
+a:hover {
+    color: #D97706;
+    text-decoration: underline;
+}
+
+ul > li:first-child {
+    font-weight: 600;
+    color: #1E3A8A;
+}
+
+ul > li:nth-child(even) {
+    background-color: #F1F5F9;
+}
+
+ul > li {
+    padding: 6px 10px;
+    margin-bottom: 4px;
+}
+
+/* === 7. FOOTER === */
+footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 14px;
+    color: #64748B;
+}
